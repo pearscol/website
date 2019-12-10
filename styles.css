@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #e8e8e8;
+}
+
+p, ul, ol {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+ul, ol {
+  margin-left: 30px;
+}
+
+p, img {
+  margin-left: 5px;
+}
+
+img {
+  display: block;
+  float: left;
+}
+
+a {
+  color: inherit;
+}
+
+h1 {
+  font-family: 'Cutive Mono', monospace;
+  font-weight: normal;
+  color: #474747;
+  font-size: 30px;
+}
+
+h1 > a {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 15px 0 3px 0;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: inherit;
+  font-weight: 700;
+  margin: 10px 0 0 5px;
+}
+
+.sub {
+  margin-bottom: 5px;
+}
+
+h4 {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 5px 0 0 5px;
+}
+
+svg {
+  width: 14px;
+  height: 14px;
+}
+
+.section-body {
+  margin: 2px 0 10px 10px;
+  border-left: 1px solid #474747;
+  padding: 5px 0 5px 10px;
+}
+
+.section-body > h2:first-of-type {
+  margin-top: 0;
+}
+
+/* HEADER */
+header {
+  background-color: #474747;
+  height: 100vh;
+  padding-top: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e8e8e8;
+}
+
+header > h1 > a {
+  color: #e8e8e8;
+  font-family: 'Nova Mono', monospace;
+  font-size: 8vw;
+}
+
+.social {
+  height: 2.5vw;
+  width: 15vw;
+  margin: 5px 0 0 0;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.social > li > a > svg {
+  fill: #e8e8e8;
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+/* Fixed header sizing for wide displays */
+@media only screen and (min-width: 1000px) {
+  header > h1 {
+    font-size: 80px;
+  }
+
+  .social {
+    width: 150px;
+    height: 25px;
+  }
+
+  .social > li > a > svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Minimum social icon sizing */
+@media only screen and (max-width: 600px) {
+  .social {
+    width: 90px;
+    height: 15px;
+  }
+
+  .social > li > a > svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+/* PAGE BODY */
+.page-body {
+  padding: 30px;
+}
+
+/* Fixed body width for wide displays */
+@media only screen and (min-width: 800px) {
+  .page-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .page-body {
+    width: 800px;
+  }
+}
+
+/* FOOTER */
+footer {
+  margin: 0 20px 30px 20px;
+  text-align: center;
+}
