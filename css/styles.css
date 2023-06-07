@@ -1,210 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:wght@400;600&display=swap');
 
+:root {
+    --heading-font: "Source Sans Pro", sans-serif;
+    --body-font: "Piazzolla", serif;
+    --dark-color: black;
+    --light-color: white;
+    background-color: --light-color;
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #1c1c1c;
-  fill: #1c1c1c;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--dark-color);
+    fill: var(--dark-color);
 }
 
-p {
-  font-size: 16px;
-  font-weight: 400;
-  font-family: Piazzolla, serif;
-  margin: 10px 0 10px 0;
+p, li {
+    font-family: var(--body-font);
+    font-size: 12pt;
 }
 
-li {
-  font-size: 16px;
-  font-weight: 400;
-  font-family: Piazzolla, serif;
+li.nav_selected {
+    font-weight: bold;
 }
 
-ul, ol {
-  padding-left: 35px;
-  margin: 10px 0 10px 0;
+li.nav_selected a {
+    text-decoration: none;
 }
 
-ul.undecorated {
-  padding-left: 15px;
-  list-style: none;
+.text_huge {
+    font-size: 72pt;
 }
 
-h1 {
-  font-size: 36px;
-  font-weight: 600;
-  font-family: "Source Sans Pro", sans-serif;
-  margin: 10px 0 15px 0;
+.text_small {
+    font-size: 10pt;
 }
 
-h2 {
-  font-size: 26px;
-  font-weight: 400;
-  font-family: "Source Sans Pro", sans-serif;
-  margin: 15px 0 10px 0;
+.centered_content {
+    text-align: center;
 }
 
-h3 {
-  font-size: 18px;
-  font-weight: 700;
-  font-family: Piazzolla, serif;
-  margin: 10px 0 10px 0;
+.spacer {
+    height: 50px;
 }
 
-a {
-  color: inherit;
-}
-
-a:hover {
-  color: #454545;
-}
-
-code, pre {
-  font-size: 14px;
-}
-
-figure {
-  margin: 10px auto 10px auto;
-  width: calc(100% - 20px);
-  text-align: center;
-}
-
-img {
-  display: inline-block;
-  width: 100%;
-  max-width: 400px;
-}
-
-figcaption {
-  font-size: 12px;
-  font-weight: 400;
-  font-style: italic;
-  font-family: Piazzolla, serif;
-}
-
-p svg, li svg {
-  height: 14px;
-  width: 14px;
-}
-
-aside {
-  border: 1px solid #1c1c1c;
-  border-radius: 20px;
-  padding: 10px 20px 20px 20px;
-}
-
-.logo-image {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.logo-image img {
-  width: 50px;
-  margin-right: 5px;
-}
-
-.logo-image p:first-of-type {
-  margin-top: 0;
-}
-
-body {
-  max-width: 900px;
-  margin: auto;
-  margin-bottom: 5px;
-}
-
-header {
-  overflow: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-header h1 {
-  margin-bottom: 5px;
-}
-
-header h1 a {
-  text-decoration: none;
-}
-
-header h1 a:hover {
-  color: inherit;
-}
-
-ul.social-nav {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-ul.social-nav > li {
-  margin: 0 3px 0 3px;
-}
-
-ul.social-nav > li:last-of-type {
-  margin-right: 0;
-}
-
-ul.social-nav > li:first-of-type {
-  margin-left: 0;
-}
-
-ul.social-nav > li svg {
-  height: 18px;
-  width: 20px;
-}
-
-header nav {
-  width: 100%;
-  border-top: 1px solid #1c1c1c;
-  border-bottom: 1px solid #1c1c1c;
-}
-
-header nav > ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-header nav > ul > li {
-  margin: 0;
-}
-
-header nav > ul > li a {
-  display: block;
-  margin: 0;
-  padding: 8px;
-}
-
-header nav > ul > li a:hover {
-  color: inherit;
-}
-
-header nav > ul > li a:hover {
-  background-color: #a1a1a1;
+#page {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 footer {
-  text-align: center;
-  margin-bottom: 20px;
+    margin: 20px 10px 10px 10px;
+    text-align: center;
 }
 
-footer p {
-  font-size: 12px;
-}
-
-@media only screen and (max-width: 910px) {
-  body {
-    max-width: 910px;
-    padding: 0 5px 0 5px;
-  }
+footer * {
+    font-size: 8pt;
 }
